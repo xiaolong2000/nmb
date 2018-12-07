@@ -5,8 +5,9 @@ using System.Web;
 
 namespace WebApplication1.Models
 {
-    public class  Customer
-    {public string CustomerNmae
+    public class Customer
+    {
+        public string CustomerNmae
         {
             get;
             set;
@@ -19,7 +20,8 @@ namespace WebApplication1.Models
         }
         public override string ToString()
         {
-            return this.CustomerNmae+"-"+this.Address;
+            return this.CustomerNmae + "-" + this.Address;
         }
+
     }
 }
