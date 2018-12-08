@@ -149,6 +149,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\GoudaiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -199,6 +200,8 @@
     <Content Include="Views\YourView.cshtml" />
     <Content Include="Views\MyView2.cshtml" />
     <Content Include="Views\Default\MyView.cshtml" />
+    <Content Include="Views\Default\GetControl.cshtml" />
+    <Content Include="Views\Goudai\GetControl.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

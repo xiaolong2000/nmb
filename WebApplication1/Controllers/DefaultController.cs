@@ -55,17 +55,22 @@ namespace WebApplication1.Controllers
 
             }
             else
-            {
+            {       
                 greeting = "下午好";
             }
             ViewData["greeting"] = greeting;
+       
+            //PhoneInfo pi = new  PhoneInfo;
+
+            
             Employee emp = new Employee();
             emp.Name = "大号";
-            emp.Salary = 2300;
-              ViewData["EmpKey"] = emp;
-                return View("MyView");
-
+            emp.Salary = 300;
+              //ViewData["EmpKey"] = emp; 
+            ViewBag.empKey = emp;
+            return View("MyView",emp);
 
         }
+        
     }
 }

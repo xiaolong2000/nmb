@@ -1,5 +1,6 @@
 ﻿
 @using WebApplication1.Models
+@model Employee
 @{
     Layout = null;
 
@@ -14,11 +15,23 @@
     <title>MyView</title>
 </head>
 <body>
-    <h1>@emp.Name,@((string)ViewData["greeting"])!</h1>
+    
     <div>
+        <h1>@Model.Name,@((string)ViewData["greeting"])!</h1>
+   
         <h2>员工</h2>
-        <p>姓名：@emp.Name</p>
-        <p>工资：@emp.Salary.ToString("C")</p>
+        <p>姓名：@Model.Name</p>
+        <p>工资：@Model.Salary.ToString("C")</p>
+        @{ 
+            if (Model.Salary > 1000)
+            {
+                <p>无敌</p>
+            }
+            else
+            {
+                <p>辣鸡</p>
+            }
+        }
     </div>
 </body>
 </html>

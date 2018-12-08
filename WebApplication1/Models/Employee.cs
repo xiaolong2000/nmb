@@ -11,5 +11,6 @@ namespace WebApplication1.Models
 
             public int Salary { get; set; }
         
+        public string client { get; set; }
     }
 }
