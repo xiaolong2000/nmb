@@ -7,12 +7,11 @@ namespace WebApplication1.Models
 {
     public class Customer
     {
-        public string CustomerNmae
+        public string CustomerName
         {
             get;
             set;
         }
-
         public string Address
         {
             get;
@@ -20,8 +19,7 @@ namespace WebApplication1.Models
         }
         public override string ToString()
         {
-            return this.CustomerNmae + "-" + this.Address;
+            return this.CustomerName+"-"+this.Address;
         }
-
     }
-}
+} 
