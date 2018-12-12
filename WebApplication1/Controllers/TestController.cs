@@ -30,18 +30,18 @@ namespace WebApplication1.Controllers
         public ActionResult GetView()
         {
             Employee emp = new Employee();
-            emp.Name = "李四";
+            emp.Name = "可靠";
             emp.Salary = 2000;
             EmployeeViewModel vmEmp = new EmployeeViewModel();
             vmEmp.EmployeeName = emp.Name;
             vmEmp.Salary = emp.Salary.ToString("C");
             if(emp.Salary>1000)
             {
-                vmEmp.SalaryGrade = "土豪";
+                vmEmp.SalaryGrade = "大哥";
             }
             else
             {
-                vmEmp.SalaryGrade = "屌丝";
+                vmEmp.SalaryGrade = "小弟";
             }
             vmEmp.UserName = "Admin";
             return View("MyView", vmEmp);

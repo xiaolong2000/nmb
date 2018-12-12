@@ -20,7 +20,7 @@ namespace WebApplication1.Controllers
             Customer emm = new Models.Customer();
             Employee emp = new Models.Employee();
             emm.CustomerName = "张三";
-            emm.Address = "打手";
+            emm.Address = "哒哒";
             ViewData["Employee"] = emp;
             ViewBag.Customer = emm;
 
